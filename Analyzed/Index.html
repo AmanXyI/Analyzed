@@ -1,129 +1,201 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title> Payments Page </title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Boxiocns CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Payments Page </title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
-  <div class="sidebar close">
+
+  <aside class="sidebar close">
     <div class="logo-details">
-        <img src="Infit transparent 2.png" alt="">
+      <img src="Infit transparent 2.png" alt="">
       <span class="logo_name"></span>
     </div>
-    <ul class="nav-links">
-      <li>
-        <a href="">
-          <i class='bx bx-grid-alt' ></i>
-          <span class="link_name">Dashboard</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Message</a></li>
+    <section class="links">
+
+      <article class="nav-links">
+        <ul class="links-list">
+          <li class="list-item">
+            <a href="">
+              <div class="icon-link">
+
+                <i class='bx bx-grid-alt'></i>
+                <span class="link_name">Dashboard</span>
+              </div>
+            </a>
+
+          </li>
+          <li class="list-item">
+            <div class="iocn-link">
+              <a href="#">
+                <div class="icon-link">
+                  <i class='bx bx-message-detail'></i>
+                  <span class="link_name">Messages</span>
+                </div>
+
+              </a>
+            </div>
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+                <i class='bx bx-history'></i>
+                <span class="link_name">Live</span>
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+
+                <i class='bx bx-calendar'></i>
+                <span class="link_name">Appointments</span>
+              </div>
+            </a>
+
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+
+                <i class='bx bx-history'></i>
+                <span class="link_name">Clients</span>
+              </div>
+            </a>
+
+          </li>
+
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+
+                <i class='bx bx-calendar-check'></i>
+                <span class="link_name">Diet Plans</span>
+              </div>
+            </a>
+
+          </li>
+          <li class="list-item " id="payments">
+
+            <a href="#">
+              <div class="icon-link">
+
+                <i class='bx bx-plug'></i>
+                <span class="link_name">Payments</span>
+                <div class="sidebar-arrow">
+
+                  <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+              </div>
+            </a>
+
+            <ul class="submenu">
+              <li class="submenu-item">
+                <a href="#">
+                  Your Bills
+                </a>
+              </li>
+              <li class="submenu-item">
+                <a href="#">
+                  Client Payments
+                </a>
+              </li>
+
+            </ul>
+
+
+
+          </li>
+
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+
+                <i class='bx bx-history'></i>
+                <span class="link_name">Recipes</span>
+              </div>
+            </a>
+
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+
+                <i class='bx bx-cog'></i>
+                <span class="link_name">Health Form</span>
+              </div>
+            </a>
+
+          </li>
+
         </ul>
-      </li>
-      <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-message-detail' ></i>
-            <span class="link_name">Message</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class="fa-solid fa-box"></i>
-            <span class="link_name">Live</span>
-          </a>
-        </div>
-       </li>
-       <li>
-        <a href="#">
-            <i class='bx bx-calendar'></i>  
-          <span class="link_name">Appointment</span>
-        </a>
-        
-      </li>
-      <li>
-        <a href="#">
-            <i class="fa-solid fa-user-group"></i>
-          <span class="link_name">Client</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Client</a></li>
+      </article>
+
+
+      <article class="action-links">
+        <ul class="links-list">
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+                <i class='bx bx-message-detail'></i>
+                <span class="link_name">get help</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+                <i class='bx bx-message-detail'></i>
+                <span class="link_name">settings</span>
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+                <i class='bx bx-message-detail'></i>
+                <span class="link_name">log out</span>
+              </div>
+            </a>
+          </li>
         </ul>
-      </li>
-      <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-plug' ></i>
-            <span class="link_name">Payments</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Payments</a></li>
-          <li><a href="#">Your Bills</a></li>
-          <li><a href="#">Client Payments</a></li>
-          
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-            <i class='bx bx-calendar-check' ></i>
-          <span class="link_name">Diet Plan</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Diet Plan</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-history'></i>
-          <span class="link_name">Recipies</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Recipies</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-cog' ></i>
-          <span class="link_name">Health Form</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Health Form</a></li>
-        </ul>
-      </li>
-      <li>
-    
-  </li>
-</ul>
-  </div>
+      </article>
+
+
+    </section>
+  </aside>
   <section class="home-section">
     <div class="home-content">
       <i class='bx bx-search-alt-2'></i>
-      
-      <span class="text">Good Morning, John Wayne<br><h6>Your performance summary this week</h6></span>
+
+      <span class="text">Good Morning, John Wayne<br>
+        <h6>Your performance summary this week</h6>
+      </span>
     </div>
     <div class="home-img">
       <img src="cash receipt from online shopping on mobile phone.png" alt="Italian Trulli">
     </div>
 
   </section>
+
   <script>
-    let arrow = document.querySelectorAll(".arrow");
-    for (var i = 0; i < arrow.length; i++) {
-      arrow[i].addEventListener("click", (e)=>{
-     let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-     arrowParent.classList.toggle("showMenu");
-      });
-    }
-    </script>
-  
+
+
+    // dropdown
+    const link = document.getElementById('payments')
+    link.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('show')
+    })
+  </script>
+
 </body>
+
 </html>
